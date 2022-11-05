@@ -79,10 +79,25 @@ _G.packer_plugins = {
     path = "C:\\Users\\tmkm\\.data\\nvim-data\\site\\pack\\packer\\start\\cmp-buffer",
     url = "https://github.com/hrsh7th/cmp-buffer"
   },
+  ["cmp-cmdline"] = {
+    loaded = true,
+    path = "C:\\Users\\tmkm\\.data\\nvim-data\\site\\pack\\packer\\start\\cmp-cmdline",
+    url = "https://github.com/hrsh7th/cmp-cmdline"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "C:\\Users\\tmkm\\.data\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["cmp-path"] = {
+    loaded = true,
+    path = "C:\\Users\\tmkm\\.data\\nvim-data\\site\\pack\\packer\\start\\cmp-path",
+    url = "https://github.com/hrsh7th/cmp-path"
+  },
+  ["cmp-vsnip"] = {
+    loaded = true,
+    path = "C:\\Users\\tmkm\\.data\\nvim-data\\site\\pack\\packer\\start\\cmp-vsnip",
+    url = "https://github.com/hrsh7th/cmp-vsnip"
   },
   ["fidget.nvim"] = {
     loaded = true,
@@ -150,6 +165,16 @@ _G.packer_plugins = {
     path = "C:\\Users\\tmkm\\.data\\nvim-data\\site\\pack\\packer\\start\\nvim-comment",
     url = "https://github.com/terrortylor/nvim-comment"
   },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "C:\\Users\\tmkm\\.data\\nvim-data\\site\\pack\\packer\\start\\nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
+  },
+  ["nvim-dap-ui"] = {
+    loaded = true,
+    path = "C:\\Users\\tmkm\\.data\\nvim-data\\site\\pack\\packer\\start\\nvim-dap-ui",
+    url = "https://github.com/rcarriga/nvim-dap-ui"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "C:\\Users\\tmkm\\.data\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
@@ -204,6 +229,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\tmkm\\.data\\nvim-data\\site\\pack\\packer\\start\\tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
+  },
+  ["vim-snip"] = {
+    loaded = true,
+    path = "C:\\Users\\tmkm\\.data\\nvim-data\\site\\pack\\packer\\start\\vim-snip",
+    url = "https://github.com/hrsh7th/vim-snip"
   },
   ["vim-wintabs"] = {
     loaded = true,
