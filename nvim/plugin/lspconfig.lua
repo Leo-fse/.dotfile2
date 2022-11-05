@@ -85,6 +85,14 @@ mason_lsp.setup_handlers({
 		nvim_lsp[server_name].setup({
 			on_attach = on_attach,
 			capabilites = capabilities,
+			settings = {
+				Lua = {
+					diagnostics = {
+						-- Get the language server to recognize the `vim`
+						globals = { "vim" },
+					},
+				},
+			},
 		})
 	end,
 })
