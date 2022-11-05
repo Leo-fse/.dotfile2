@@ -33,19 +33,23 @@ require("packer").startup(function(use)
 	use("akinsho/nvim-bufferline.lua")
 
 	-- Formatter & Completetion & LSP
-	use("onsails/lspkind-nvim") -- vscode-like pictograms
+	use("neovim/nvim-lspconfig") -- LSP
+	use("williamboman/mason.nvim")
+	use("williamboman/mason-lspconfig.nvim")
+	use("j-hui/fidget.nvim") -- nvim-lsp progress UIs
+
+	use("jose-elias-alvarez/null-ls.nvim") -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
+
 	use("hrsh7th/cmp-buffer") -- nvim-cmp source for buffer words
 	use("hrsh7th/cmp-nvim-lsp") -- nvim-cmp source for neovim's built-in LSP
 	use("hrsh7th/nvim-cmp") -- Completion
-	use("neovim/nvim-lspconfig") -- LSP
-	use("jose-elias-alvarez/null-ls.nvim") -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
-	use("williamboman/mason.nvim")
-	use("williamboman/mason-lspconfig.nvim")
+	use("hrsh7th/cmp-path")
+	use("hrsh7th/cmp-cmdline")
+	use("hrsh7th/nvim-cmp")
+	use("onsails/lspkind-nvim") -- vscode-like pictograms
 	use("glepnir/lspsaga.nvim") -- LSP UIs
-	use("j-hui/fidget.nvim") -- nvim-lsp progress UIs
 	-- Debug
 	use({ "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } })
-
 	-- Utils
 	-- -- Tab
 	use({
@@ -58,6 +62,7 @@ require("packer").startup(function(use)
 		"windwp/nvim-ts-autotag",
 		"terrortylor/nvim-comment",
 	})
+	-- Notice
 	use({
 		"folke/noice.nvim",
 		config = function()
