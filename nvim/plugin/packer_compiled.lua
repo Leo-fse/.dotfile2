@@ -104,6 +104,21 @@ _G.packer_plugins = {
     path = "C:\\Users\\tmkm\\.data\\nvim-data\\site\\pack\\packer\\start\\fidget.nvim",
     url = "https://github.com/j-hui/fidget.nvim"
   },
+  ["git.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\tmkm\\.data\\nvim-data\\site\\pack\\packer\\start\\git.nvim",
+    url = "https://github.com/dinhhuy258/git.nvim"
+  },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\tmkm\\.data\\nvim-data\\site\\pack\\packer\\start\\gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
+  ["lsp-colors.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\tmkm\\.data\\nvim-data\\site\\pack\\packer\\start\\lsp-colors.nvim",
+    url = "https://github.com/folke/lsp-colors.nvim"
+  },
   ["lspkind-nvim"] = {
     loaded = true,
     path = "C:\\Users\\tmkm\\.data\\nvim-data\\site\\pack\\packer\\start\\lspkind-nvim",
@@ -159,6 +174,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\tmkm\\.data\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-colorizer.lua"] = {
+    loaded = true,
+    path = "C:\\Users\\tmkm\\.data\\nvim-data\\site\\pack\\packer\\start\\nvim-colorizer.lua",
+    url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
   ["nvim-comment"] = {
     loaded = true,
@@ -230,10 +250,10 @@ _G.packer_plugins = {
     path = "C:\\Users\\tmkm\\.data\\nvim-data\\site\\pack\\packer\\start\\tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
   },
-  ["vim-snip"] = {
+  ["vim-vsnip"] = {
     loaded = true,
-    path = "C:\\Users\\tmkm\\.data\\nvim-data\\site\\pack\\packer\\start\\vim-snip",
-    url = "https://github.com/hrsh7th/vim-snip"
+    path = "C:\\Users\\tmkm\\.data\\nvim-data\\site\\pack\\packer\\start\\vim-vsnip",
+    url = "https://github.com/hrsh7th/vim-vsnip"
   },
   ["vim-wintabs"] = {
     loaded = true,

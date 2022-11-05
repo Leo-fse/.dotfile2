@@ -14,14 +14,4 @@ vim.opt.cmdheight = 1
 
 vim.opt.clipboard:prepend({ "unnamed", "unnamedplus" })
 
--- キーバインド
-local keymap = vim.keymap
--- 画面分割
-keymap.set("n", "ss", ":split<Return><C-w>w")
-keymap.set("n", "sv", ":vsplit<Return><C-w>w")
-
--- Turn off paste mode when leaving insert
-vim.api.nvim_create_autocmd("InsertLeave", {
-	pattern = "*",
-	command = "set nopaste",
-})
+vim.g.python3_host_prog = "C:\\Users\\tmkm\\.config\\python\\venv3110\\Scripts"

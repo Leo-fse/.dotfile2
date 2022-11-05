@@ -4,6 +4,7 @@ Import-Module Terminal-Icons
 Set-Alias vim nvim
 Set-Alias ll ls 
 Set-Alias g git
+Set-Alias mf New-Item
 # Set-Alias tig 'C:\Users\tmkm\scoop\apps\git\current\bin\tig.exe'
 # Set-Alias less 'C:\Users\tmkm\scoop\apps\git\current\bin\less.exe'
 

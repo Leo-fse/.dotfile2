@@ -5,7 +5,7 @@ if not status then
 end
 
 vim.cmd([[packadd packer.nvim]])
-require("packer").startup(function(use)
+packer.startup(function(use)
 	-- Packer can manage itself
 	use("wbthomason/packer.nvim")
 
@@ -18,7 +18,6 @@ require("packer").startup(function(use)
 		"nvim-telescope/telescope-file-browser.nvim",
 		"kyazdani42/nvim-web-devicons",
 	})
-	-- FIX インストールできない
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
 	--Treesitter
 	use({
@@ -27,6 +26,8 @@ require("packer").startup(function(use)
 	})
 	-- ColorScheme
 	use("folke/tokyonight.nvim")
+	use("norcalli/nvim-colorizer.lua")
+	use("folke/lsp-colors.nvim")
 	-- StatusLine
 	use("nvim-lualine/lualine.nvim")
 	-- BufferLine
@@ -45,7 +46,6 @@ require("packer").startup(function(use)
 	use("hrsh7th/nvim-cmp") -- Completion
 	use("hrsh7th/cmp-path")
 	use("hrsh7th/cmp-cmdline")
-	use("hrsh7th/nvim-cmp")
 	use("hrsh7th/cmp-vsnip")
 	use("hrsh7th/vim-vsnip")
 
@@ -65,6 +65,28 @@ require("packer").startup(function(use)
 		"windwp/nvim-ts-autotag",
 		"terrortylor/nvim-comment",
 	})
+
+	-- Git
+	use("dinhhuy258/git.nvim")
+	use("lewis6991/gitsigns.nvim")
+	-- install without yarn or npm
+	use({
+		"iamcco/markdown-preview.nvim",
+		run = function()
+			vim.fn["mkdp#util#install"]()
+		end,
+	})
+	use({
+		"iamcco/markdown-preview.nvim",
+		run = "cd app && npm install",
+		setup = function()
+			vim.g.mkdp_filetypes = { "markdown" }
+		end,
+		ft = { "markdown" },
+	})
+
+	-- Zen mode
+	use("folke/zen-mode.nvim")
 	-- Notice
 	use({
 		"folke/noice.nvim",
