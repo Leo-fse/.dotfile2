@@ -9,5 +9,8 @@
        :MarkDownPreview
 - [x] MarkDownPreviw で開いたブラウザーの書式設定
 - [ ] NeoVim と Git の連携
+- [ ] Use tig command
+- [ ] Use fugitive
 - [ ] 日本語入力時にインサートモードに戻ったら IME オフにしたい
 - [ ] 一括コメントの設定
+- [ ] How to make new file while Vim Open
