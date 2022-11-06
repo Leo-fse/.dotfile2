@@ -1,5 +1,9 @@
 local keymap = vim.keymap
 
+vim.g.mapleader = " "
+-- keymap.set("i", "jk", "<ESC>")
+-- keymap.set("n", "<ESC><ESC>", ":nohlsearch<CR>")
+
 keymap.set("n", "x", '"_x')
 
 -- Increment/decrement

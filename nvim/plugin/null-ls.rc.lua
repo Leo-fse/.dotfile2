@@ -21,12 +21,16 @@ null_ls.setup({
 		null_ls.builtins.formatting.stylua,
 
 		--Python
-		null_ls.builtins.diagnostics.flake8,
-		null_ls.builtins.diagnostics.mypy,
+		null_ls.builtins.diagnostics.flake8.with({ extra_args = { "--max-line-length=100" } }),
+		null_ls.builtins.diagnostics.mypy.with({ extra_args = { "--ignore-missing-imports" } }),
 		null_ls.builtins.formatting.black,
+		null_ls.builtins.formatting.isort,
 
 		-- Typescript Javascript
-		null_ls.builtins.formatting.prettierd,
+		null_ls.builtins.formatting.prettier.with({
+			prefer_local = "node_modules/.bin",
+			extra_args = { "--no-semi", "--single-quote", "--jsx-shingle-quote" },
+		}),
 		null_ls.builtins.diagnostics.eslint_d.with({
 			diagnostics_format = "[eslint] #{m}\n(#{c})",
 		}),
