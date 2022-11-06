@@ -69,6 +69,7 @@ packer.startup(function(use)
 	-- Git
 	use("dinhhuy258/git.nvim")
 	use("lewis6991/gitsigns.nvim")
+	-- Markdown
 	-- install without yarn or npm
 	use({
 		"iamcco/markdown-preview.nvim",
