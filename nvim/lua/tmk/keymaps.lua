@@ -1,7 +1,8 @@
 local keymap = vim.keymap
 
 vim.g.mapleader = " "
-keymap.set("i", "jk", "<ESC>:<C-u>w<CR>")
+keymap.set("i", "jk", "<ESC>:<C-u>w<CR>") --Insertmodeをjkで抜けたら保存
+keymap.set("n", "<LEADER>w", ":<C-u>w<CR>") -- ファイル保存
 keymap.set("n", "<ESC><ESC>", ":nohlsearch<CR>")
 
 keymap.set("n", "x", '"_x')
